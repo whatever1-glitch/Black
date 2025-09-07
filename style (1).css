@@ -1,0 +1,208 @@
+body {
+    background-color: #0a0a0a; /* premium black */
+    color: #808080; /* blood red */
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #111;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+a {
+    color: #808080;
+    text-decoration: none;
+}
+
+footer {
+    background: #111;
+    color: #666;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.news-button {
+    display: inline-block;
+    background-color: #808080; /* blood red */
+    color: #0a0a0a;
+    padding: 12px 24px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.news-button:hover {
+    background-color: #808080; /* brighter red */
+}
+.communications-button {
+   display: inline-block;
+    background-color: #808080; /* blood red */
+    color: #0a0a0a;
+    padding: 12px 24px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.news-button:hover {
+    background-color: #808080; /* brighter red */
+}
+body::after {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/></filter><rect width="100%" height="100%" filter="url(%23noise)"/></svg>');
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 9999;
+}
+#intro {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: black;
+  z-index: 9999;
+}
+
+#main-content {
+  background: #0a0a0a;
+  color: grey;
+}
+/* General page styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #000; /* black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+}
+
+/* Chat container */
+.chat-container {
+  background: #1a1a1a; /* dark grey container */
+  width: 380px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Header */
+.chat-container h2 {
+  background: #333; /* darker header */
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+  font-size: 1.4em;
+}
+
+/* Username input section */
+#username-section {
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+}
+
+#username-section input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 20px;
+  outline: none;
+  margin-right: 10px;
+  background: #222;
+  color: #fff;
+}
+
+#username-section button {
+  padding: 10px 15px;
+  background: #555;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#username-section button:hover {
+  background: #777;
+}
+
+/* Chat messages */
+#chat-box {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  max-height: 300px;
+  background: #111; /* very dark background for chat */
+}
+
+.message {
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 15px;
+  max-width: 80%;
+  word-wrap: break-word;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  background: #222; /* dark grey message bubble */
+  color: #fff;
+}
+
+.message strong {
+  margin-right: 5px;
+}
+
+/* Chat input section */
+.chat-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #333;
+  background: #111;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 20px;
+  outline: none;
+  background: #222;
+  color: #fff;
+}
+
+.chat-input button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background: #555;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background: #777;
+}
